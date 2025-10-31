@@ -13,6 +13,7 @@ namespace Hotel
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("AlegreyaSans-Light.ttf", "AlegreyaSans-Light");
                 });
 
 #if DEBUG
