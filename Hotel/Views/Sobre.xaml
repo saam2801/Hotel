@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hotel.Views.Sobre"
+             Title="Sobre">
+    <VerticalStackLayout VerticalOptions="Center" Margin="10">
+        <Label Text="Este aplicativo tem como finalidade servir como um sistema de hospedagem de quartos de hoteis, para a empresa ABCDEFG Ltda., e será disponibilizado publicamente." HorizontalOptions="Center" Margin="35"/>
+        <Label Text="Feito por: Tiago A. Silva" HorizontalOptions="Center"/>
+        <Label Text="Alguns detalhes: Samuel G. Silva" HorizontalOptions="Center"/>
+        <Label Text="Data: 31/10/2025" HorizontalOptions="Center"/>
+        <Button Text="Voltar" BackgroundColor="White" WidthRequest="90" Margin="15" Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

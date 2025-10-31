@@ -11,10 +11,12 @@
             <Setter Property="BorderColor" Value="White"/>
         </Style>
     </Page.Resources>
-    
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10"
                          >
+        <Button Text="i" BackgroundColor="White" WidthRequest="10" HorizontalOptions="Start" CornerRadius="15"
+                Clicked="Button_Clicked"
+                />
         <Label 
             Text="Cálculo da Diária"
             TextColor="{StaticResource Primary}"
