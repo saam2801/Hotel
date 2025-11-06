@@ -59,7 +59,8 @@
                        FontSize="20"
                        FontAttributes="Bold"/>
                 <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acomodação"/>
+                        Title="Selecione sua Acomodação"
+                        ItemDisplayBinding="{Binding Descricao}"/>
                 <Frame Padding="10" Margin="10" BackgroundColor="{StaticResource Gray950}">
                     <VerticalStackLayout>
                         <Label Text="Período da Estadia"
@@ -70,7 +71,8 @@
                             <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *" ColumnSpacing="10" RowSpacing="5">
                                 <Label Text="Check-in: "/>
                                 <DatePicker x:Name="dtpck_checkin" Grid.Column="1"
-                                            Format="dd/MM/yyyy"/>
+                                            Format="dd/MM/yyyy"
+                                            DateSelected="dtpck_checkin_DateSelected"/>
 
                                 <Label Text="Check-out: " Grid.Row="1"/>
                                 <DatePicker x:Name="dtpck_checkout" Grid.Column="1" Grid.Row="1"
@@ -79,7 +81,7 @@
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Frame>
-                <Button Text="Avançar" BackgroundColor="{StaticResource Primary}" TextColor="White"/>
+                <Button Text="Avançar" BackgroundColor="{StaticResource Primary}" TextColor="White" Clicked="Button_Clicked_1"/>
             </VerticalStackLayout>
         </Frame>
     </VerticalStackLayout>
