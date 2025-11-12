@@ -13,6 +13,7 @@
     </Page.Resources>
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10"
+                         Spacing="10"
                          >
         <Button Text="i" BackgroundColor="White" WidthRequest="10" HorizontalOptions="Start" CornerRadius="15"
                 Clicked="Button_Clicked"
@@ -54,20 +55,26 @@
                              Maximum="10"
                              Increment="1"/>
                 </Grid>
-                <Label Text="Escolha sua Suíte"
-                       FontFamily="AlegreyaSansRegular"
-                       FontSize="20"
-                       FontAttributes="Bold"/>
-                <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acomodação"
-                        ItemDisplayBinding="{Binding Descricao}"/>
-                <Frame Padding="10" Margin="10" BackgroundColor="{StaticResource Gray950}">
+                <Frame Margin="10" Padding="10">
                     <VerticalStackLayout>
-                        <Label Text="Período da Estadia"
+                        <Label Text="Escolha sua Suíte"
                                FontFamily="AlegreyaSansRegular"
                                FontSize="20"
                                FontAttributes="Bold"/>
-                        <HorizontalStackLayout>
+                        <Picker x:Name="pck_quarto"
+                                Title="Selecione sua Acomodação"
+                                ItemDisplayBinding="{Binding Descricao}"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Padding="10" Margin="10" BackgroundColor="{StaticResource Gray950}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Período da Estadia"
+                               FontFamily="AlegreyaSansRegular"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"/>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *" ColumnSpacing="10" RowSpacing="5">
                                 <Label Text="Check-in: "/>
                                 <DatePicker x:Name="dtpck_checkin" Grid.Column="1"
